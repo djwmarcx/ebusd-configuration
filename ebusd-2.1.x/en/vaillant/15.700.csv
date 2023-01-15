@@ -62,7 +62,7 @@ r;w,,HolidayTemp,holiday temperature,,,,8200,,,tempv,,,holiday setpoint
 r;w,,BankHolidayStartPeriod,bank holiday start period,,,,8300,,,hfrom,,,start date of bank holidays
 r;w,,BankHolidayEndPeriod,bank holiday end period,,,,8400,,,hto,,,end date of bank holidays
 #r;w,,Unknown85,(constant 0/inf),,,,8500,,,tempv,,,unknown value
-r;w,,OutsideTempAvg,average outside temperature,,,,9500,,,tempv,,,gerundete mittlere Außentemperatur (alle 3h aktualisiert)
+r,,OutsideTempAvg,average outside temperature,,,,9500,,,tempv,,,gerundete mittlere Außentemperatur (alle 3h aktualisiert)
 r,,MaintenanceDue,maintenance due,,,,9600,,,yesno,,,zeigt an ob die Wartung fällig ist
 r,,HwcStorageTempTop,hwc storage temperature top,,,,9D00,,,tempv,,,"Temp.fühler WW, oben"
 r,,HwcStorageTempBottom, storage temperature bottom,,,,9E00,,,tempv,,,"Temp.fühler WW, unten"
