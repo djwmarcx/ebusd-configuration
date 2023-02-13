@@ -12,8 +12,6 @@ r,,HoursCool,,,,,43,,,energy,,,,,,,,,,,,,,,,,,,,,
 r,,CurrentYieldPower,,,,,23,,,D1B,10,kW,current yielded energy from the environment in kW,,,,,,,,,,,,,,,,,,
 r,,CurrentConsumedPower,,,,,24,,,D1B,10,kW,current power consumption of the heatpump in kW,,,,,,,,,,,,,,,,,,
 r,,CurrentCompressorUtil,,,,,25,,,D1B,,%,current compressor utilization in percent,,,,,,,,,,,,,,,,,,
-r,,AirInletTemp,Lufteinlasstemperatur,,,,26,airinlettemp,,temp,,,,,,,,,,,,,,,,,,,,
-
 # Total heating yields,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 *r,,,,,,"B516","18",,,IGN:1,,,,,,,,,,,,,,,,,,,,,
 r,,YieldTotal,,,,,01,,,energy,,,,,,,,,,,,,,,,,,,,,
