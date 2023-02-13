@@ -34,7 +34,7 @@ r,,FourWayValveHours,D.106 4-port valve hours,,,,3406,,,hoursum,,,,,,,,,,,,,,,,,
 r,,FourWayValveSwitchingOperations,D.107 4-port valve switch oprations,,,,3407,,,UIN,,,,,,,,,,,,,,,,,,,,,,,,,,
 r,,EEVSteps,D.113 EEV Steps,,,,340d,,,UIN,,,,,,,,,,,,,,,,,,,,,,,,,,
 r,,TotalCompressorStarts,D.130 Total compressor starts,,,,341e,,,UIN,,,,,,,,,,,,,,,,,,,,,,,,,,
-r,,MaxWaterPumpPressure,D.131 Max water pump pressure,,,,341f,,,UIN,,mbar
+r,,MaxWaterPumpPressure,D.131 Max water pump pressure,,,,341f,,,UIN,,mbar,,,,,,,,,,,,,,,,,,,,,,,,
 #r,,CoolingCompressorStartkMin,D.133 Cooling compressor start ºmin. 0-900 ºmin. Step 1 ºmin. Factory 90ºmin.,,,,3421,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 r;w,,NoiseReductionLevel,D.140 Noise reduction level. 40-60 %. Step 1 %. Factory 40%.,,,,3428,,,D1B,,%,,,,,,,,,,,,,,,,,,,,,,,,
 r;w,,MaximunBlockTimeHours,D.145 Maximun block time hours. 0-9 h. Step 1 h. Factory 5.,,,,342d,,,D1B,,h,,,,,,,,,,,,,,,,,,,,,,,,
