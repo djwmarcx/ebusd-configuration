@@ -120,7 +120,7 @@ r;w,,Hc2MaxFlowTempDesired,MaxFlowTempDesired heating circuit 2,,,,1000,,,tempv,
 r;w,,Hc2MinFlowTempDesired,MinFlowTempDesired heating circuit 2,,,,1200,,,tempv,,,minimum flow temperature setpoint (end emphasis) of Hc2
 r;w,,Hc2SummerTempLimit,summer outside switchoff temperature heating circuit 2,,,,1400,,,tempv,,,if outside temperature > summer limit => heating is OFF;applies to comfort and night setback setpoint
 r;w,,Hc2RoomTempSwitchOn,RoomTempSwitchOn heating circuit 2,,,,1500,,,rcmode,,,room temperature modulation of Hc2
-r,,Hc2MixerMovement,MixerMovement heating circuit 2,,,,1A00,,,EXP,,,"status of mixer (<0 closing, >0 opening)",
+r,,Hc2MixerMovement,MixerMovement heating circuit 2,,,,1A00,,,EXP,,,"status of mixer (<0 closing, >0 opening)"
 r,,Hc2HeatCurveAdaption,HeatCurveAdaption heating circuit 2,,,,1C00,,,EXP,,,adaption applied to heating curve of Hc2
 r;w,,Hc2Status,Status heating circuit 2,,,,1B00,,,UCH,,,status of zone 2
 r;w,,Hc2PumpStatus,PumpStatus heating circuit 2,,,,1E00,,,UIN,,,pump status of zone 2
