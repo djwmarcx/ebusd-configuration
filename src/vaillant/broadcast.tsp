@@ -55,4 +55,14 @@ namespace Broadcast {
   model Load {
     value: onoff;
   }
+
+  /** noise reduction state */
+  @passive
+  @zz(BROADCAST)
+  @id(MF, 0x8)
+  model NoiseReduction {
+    @maxLength(1)
+    ign: IGN;
+    value: onoff;
+  }
 }

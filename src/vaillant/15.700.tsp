@@ -465,7 +465,7 @@ namespace _700 {
   // r;w,Unknown85,(constant 0/inf),8500,tempv,unknown value
 
   /** average outside temperature */
-  @inherit(r_1, w_1)
+  @inherit(r_1)
   @ext(0x95, 0)
   model OutsideTempAvg {
     /** gerundete mittlere Außentemperatur (alle 3h aktualisiert) */
@@ -723,6 +723,7 @@ namespace _700 {
   @ext(0x1e, 0)
   model Hc1PumpStatus {
     /** pump status of zone 1 */
+    @values(Values_onoff)
     value: UIN;
   }
   // ##### heating circuit 2 #####
@@ -853,6 +854,7 @@ namespace _700 {
   @ext(0x1e, 0)
   model Hc2PumpStatus {
     /** pump status of zone 2 */
+    @values(Values_onoff)
     value: UIN;
   }
   // ##### heating circuit 3 #####
@@ -983,6 +985,7 @@ namespace _700 {
   @ext(0x1e, 0)
   model Hc3PumpStatus {
     /** pump status of zone 3 */
+    @values(Values_onoff)
     value: UIN;
   }
   // ##### zone 1 #####
@@ -1055,6 +1058,14 @@ namespace _700 {
     value: tempv;
   }
 
+  /** manual desired temperature zone 1 */
+  @inherit(r_6, w_6)
+  @ext(0x22, 0)
+  model Z1ManualTemp {
+    /** manual setpoint for zone 1 */
+    value: tempv;
+  }
+
   /** quick veto temperature zone 1 */
   @inherit(r_6, w_6)
   @ext(0x8, 0)
@@ -1115,7 +1126,7 @@ namespace _700 {
   @ext(0x12, 0)
   model Z1ValveStatus {
     /** valve status of zone 1 */
-    value: UCH;
+    value: openclose;
   }
 
   /** room zone mapping zone 1 */
@@ -1127,7 +1138,7 @@ namespace _700 {
   }
 
   /** room temperature desired zone 1 */
-  @inherit(r_6, w_6)
+  @inherit(r_6)
   @ext(0x14, 0)
   model Z1ActualRoomTempDesired {
     /** current room setpoint considering all basic conditions passed to the control algorithms */
@@ -1228,6 +1239,14 @@ namespace _700 {
     value: tempv;
   }
 
+  /** manual desired temperature zone 2 */
+  @inherit(r_7, w_7)
+  @ext(0x22, 0)
+  model Z2ManualTemp {
+    /** manual setpoint for zone 2 */
+    value: tempv;
+  }
+
   /** quick veto temperature zone 2 */
   @inherit(r_7, w_7)
   @ext(0x8, 0)
@@ -1280,7 +1299,7 @@ namespace _700 {
   @ext(0x12, 0)
   model Z2ValveStatus {
     /** valve status of zone 2 */
-    value: UCH;
+    value: openclose;
   }
 
   /** room zone mapping zone 2 */
@@ -1292,7 +1311,7 @@ namespace _700 {
   }
 
   /** room temperature desired zone 2 */
-  @inherit(r_7, w_7)
+  @inherit(r_7)
   @ext(0x14, 0)
   model Z2ActualRoomTempDesired {
     /** current room setpoint considering all basic conditions passed to the control algorithms */
@@ -1393,6 +1412,14 @@ namespace _700 {
     value: tempv;
   }
 
+  /** manual desired temperature zone 3 */
+  @inherit(r_8, w_8)
+  @ext(0x22, 0)
+  model Z3ManualTemp {
+    /** manual setpoint for zone 3 */
+    value: tempv;
+  }
+
   /** quick veto temperature zone 3 */
   @inherit(r_8, w_8)
   @ext(0x8, 0)
@@ -1445,7 +1472,7 @@ namespace _700 {
   @ext(0x12, 0)
   model Z3ValveStatus {
     /** valve status of zone 3 */
-    value: UCH;
+    value: openclose;
   }
 
   /** room zone mapping zone 3 */
@@ -1457,7 +1484,7 @@ namespace _700 {
   }
 
   /** room temperature desired zone 3 */
-  @inherit(r_8, w_8)
+  @inherit(r_8)
   @ext(0x14, 0)
   model Z3ActualRoomTempDesired {
     /** current room setpoint considering all basic conditions passed to the control algorithms */
