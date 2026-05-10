@@ -1,3 +1,94 @@
+# 2026-04-19
+https://ebus.github.io/ only:
+* reworked+merged several PRs:
+  * vaillant/15.vai and c0.wtw from #503 and #429
+  * vaillant/15.700 and 15.ctlv2 from #521 and room hunidity from comment in #330
+  * vaillant/b516_inc for bai/hmu/ctlv2/vr_71/vwz from #504
+  * vaillant/15.ctlv2 and 720/bas*/ctls2/ctlv3 from #564
+  * vaillant/15.350 HW7202 from #542
+  * vaillant/08.hmu from #565
+* start using the value range feature (not yet included in csv conversinoo though)
+* fix several unit mismatches
+
+# 2026-02-01
+https://ebus.github.io/ only:
+* smaller corrections, remove unused top level broadcast items where appropriate
+* worked on some PRs:
+  * rework #481
+  * include #482 template adjustments
+
+# 2025-09-28
+https://ebus.github.io/ only:
+* reworked+merged several PRs:
+  * vaillant/15.uih from #512
+  * vaillant/08.bai from #411
+* fix name and comment of several IGN fields
+* fix some invalid units, e.g. in vaillant/15.uih and vaillant/08.hmu
+* add display contrast template
+* add allow writing to some cooling messages in vaillant/15.uih
+* add better writable timeslots, e.g. in vaillant/15.ctlv2 (and links)
+
+# 2025-05-18
+https://ebus.github.io/ only:
+* reworked+merged several PRs:
+  * vaillant/08.bai from #480, #494
+  * vaillant/08.hmu from #496
+* add pump mode eco to some vaillant/08.bai
+* fix missed vaillant/08.bai 0010002465 association
+
+# 2025-02-16
+https://ebus.github.io/ only:
+* reworked+merged several PRs:
+  * encon/0a + 3c + 7c from #406
+  * vaillant/08.bai from #442, #436
+  * vaillant/08.hmu from #479
+
+# 2025-01-21
+https://ebus.github.io/ only:
+* reworked+merged several PRs:
+  * vaillant/08.hmu from #160, #174, #316, #330, #407
+  * vaillant/08.bai from #202, #416, #201, #367, #323
+  * vaillant/08.v3x from #226
+  * vaillant/76.vwz from #330
+  * vaillant/76.vwzio from #407
+  * vaillant/08.recov from #343, #364
+  * vaillant/hcmode from #388 and #389
+  * vaillant/_templates from #393
+  * vaillant/e0.omu from #368
+  * vaillant/15.ctls2 from #422
+  * vaillant/15.ctlv2 from #423
+  * vaillant/06.pms + 06.vms from #430 and #454
+  * vaillant/mcmode from #328 
+  * tem/15 from #129
+* add vaillant/15.ctlv3 link according to #35, #418, #449
+* fix some message IDs in vaillant/15.ctlv2 and ochsner
+* fix wolf file names
+* fix missing reference to product id in vaillant/08.bai condition
+
+# 2024-12-08
+https://ebus.github.io/ only:
+* added vaillant/06.vmd
+* added vaillant/08.bai 0010011701
+* added ochsner/15.22102
+* added some generic opdata from eBUS spec to src/opdata_inc and src/broadcast
+* added wolf/broadcast, wolf/08.hc, and wolf/50.mc with symlinked kromschroeder dir
+
+# 2024-07-13
+* normalized, corrected, and converted to TypeSpec
+* generated files rebuilt from TypeSpec definitions published on github CDN https://ebus.github.io/
+
+# 2024-03-01
+* remove previous merge of #316 again as several users reported having issues with their heating since that: live monitor and test menu to vaillant/08.hmu
+
+# 2024-02-11
+* added vailant/15.ctlv2
+* added live monitor and test menu to vaillant/08.hmu
+
+# 2024-01-20
+* added vaillant/15.bass
+* added vaillant/08.recov
+* extended vaillant/15.700 with zone 3 timers
+
 # 2023-09-23
 * added energyintegral for vailant/08.hmu
 * extended sfmode for vaillant/15.700+720+b7v+basv
