@@ -31,7 +31,7 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "@ebusd/ebus-typespec": "~0.28.0",
-    "@typespec/compiler": "~1.11.0"
+    "@ebusd/ebus-typespec": "~0.29.0",
+    "@typespec/compiler": "~1.12.0"
   }
 }
